@@ -1,0 +1,32 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.parameta.com/xml/employees"
+           targetNamespace="http://www.parameta.com/xml/employees" elementFormDefault="qualified">
+    <xs:element name="EmployeeInformationRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="lastName" type="xs:string"/>
+                <xs:element name="documentType" type="xs:string"/>
+                <xs:element name="documentNumber" type="xs:string"/>
+                <xs:element name="birthdate" type="xs:date"/>
+                <xs:element name="vinculationDate" type="xs:date"/>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element name="salary" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="EmployeeInformationResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:integer"/>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="lastName" type="xs:string"/>
+                <xs:element name="documentType" type="xs:string"/>
+                <xs:element name="documentNumber" type="xs:string"/>
+                <xs:element name="birthdate" type="xs:date"/>
+                <xs:element name="vinculationDate" type="xs:date"/>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element name="salary" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
