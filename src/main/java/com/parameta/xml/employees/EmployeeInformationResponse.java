@@ -22,9 +22,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -44,23 +44,22 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "id",
-    "name",
-    "lastName",
-    "documentType",
-    "documentNumber",
-    "birthdate",
-    "vinculationDate",
-    "title",
-    "salary"
+        "id",
+        "name",
+        "lastName",
+        "documentType",
+        "documentNumber",
+        "birthdate",
+        "vinculationDate",
+        "title",
+        "salary"
 })
 @XmlRootElement(name = "EmployeeInformationResponse")
-@Builder
 public class EmployeeInformationResponse {
 
     @XmlElement(required = true)
@@ -86,11 +85,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the id property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link BigInteger }
-     *     
+     *
      */
     public BigInteger getId() {
         return id;
@@ -98,11 +97,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the id property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
-     *     
+     *
      */
     public void setId(BigInteger value) {
         this.id = value;
@@ -110,11 +109,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the name property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getName() {
         return name;
@@ -122,11 +121,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the name property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setName(String value) {
         this.name = value;
@@ -134,11 +133,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the lastName property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getLastName() {
         return lastName;
@@ -146,11 +145,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the lastName property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setLastName(String value) {
         this.lastName = value;
@@ -158,11 +157,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the documentType property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getDocumentType() {
         return documentType;
@@ -170,11 +169,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the documentType property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setDocumentType(String value) {
         this.documentType = value;
@@ -182,11 +181,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the documentNumber property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getDocumentNumber() {
         return documentNumber;
@@ -194,11 +193,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the documentNumber property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setDocumentNumber(String value) {
         this.documentNumber = value;
@@ -206,11 +205,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the birthdate property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public XMLGregorianCalendar getBirthdate() {
         return birthdate;
@@ -218,11 +217,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the birthdate property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public void setBirthdate(XMLGregorianCalendar value) {
         this.birthdate = value;
@@ -230,11 +229,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the vinculationDate property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public XMLGregorianCalendar getVinculationDate() {
         return vinculationDate;
@@ -242,11 +241,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the vinculationDate property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public void setVinculationDate(XMLGregorianCalendar value) {
         this.vinculationDate = value;
@@ -254,11 +253,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the title property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getTitle() {
         return title;
@@ -266,11 +265,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the title property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setTitle(String value) {
         this.title = value;
@@ -278,11 +277,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Gets the value of the salary property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link BigInteger }
-     *     
+     *
      */
     public BigInteger getSalary() {
         return salary;
@@ -290,11 +289,11 @@ public class EmployeeInformationResponse {
 
     /**
      * Sets the value of the salary property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
-     *     
+     *
      */
     public void setSalary(BigInteger value) {
         this.salary = value;

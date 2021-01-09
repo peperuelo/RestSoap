@@ -1,12 +1,10 @@
 package com.parameta.repository;
 
-import com.parameta.xml.employees.EmployeeInformationRequest;
+import com.parameta.models.EmployeeDTO;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EmployeeRepository extends CrudRepository<EmployeeInformationRequest, Integer> {
-
-
+public interface EmployeeRepository extends CrudRepository<EmployeeDTO, Integer> {
 
 }

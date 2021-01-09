@@ -24,9 +24,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -45,77 +45,63 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "name",
-    "lastName",
-    "documentType",
-    "documentNumber",
-    "birthdate",
-    "vinculationDate",
-    "title",
-    "salary"
+        "name",
+        "lastName",
+        "documentType",
+        "documentNumber",
+        "birthdate",
+        "vinculationDate",
+        "title",
+        "salary"
 })
 @XmlRootElement(name = "EmployeeInformationRequest")
 public class EmployeeInformationRequest {
 
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id ;
-
     @XmlElement(required = true)
-    @Column(name = "nombre")
+
     protected String name;
 
     @XmlElement(required = true)
-    @Column(name = "apellido")
+
     protected String lastName;
 
     @XmlElement(required = true)
-    @Column(name = "tipo_documento")
+
     protected String documentType;
 
     @XmlElement(required = true)
-    @Column(name = "numero_documento")
+
     protected String documentNumber;
 
     @XmlElement(required = true)
-    @Column(name = "fecha_nacimiento")
     @XmlSchemaType(name = "date")
     protected XMLGregorianCalendar birthdate;
 
     @XmlElement(required = true)
-    @Column(name = "fecha_vinculacion")
     @XmlSchemaType(name = "date")
     protected XMLGregorianCalendar vinculationDate;
 
     @XmlElement(required = true)
-    @Column(name = "cargo")
+
     protected String title;
 
     @XmlElement(required = true)
-    @Column(name = "salario")
+
     protected BigInteger salary;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     /**
      * Gets the value of the name property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getName() {
         return name;
@@ -123,11 +109,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Sets the value of the name property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setName(String value) {
         this.name = value;
@@ -135,11 +121,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Gets the value of the lastName property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getLastName() {
         return lastName;
@@ -147,11 +133,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Sets the value of the lastName property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setLastName(String value) {
         this.lastName = value;
@@ -159,11 +145,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Gets the value of the documentType property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getDocumentType() {
         return documentType;
@@ -171,11 +157,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Sets the value of the documentType property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setDocumentType(String value) {
         this.documentType = value;
@@ -183,11 +169,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Gets the value of the documentNumber property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getDocumentNumber() {
         return documentNumber;
@@ -195,11 +181,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Sets the value of the documentNumber property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setDocumentNumber(String value) {
         this.documentNumber = value;
@@ -210,11 +196,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Gets the value of the birthdate property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public XMLGregorianCalendar getBirthdate() {
         return birthdate;
@@ -222,11 +208,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Sets the value of the birthdate property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public void setBirthdate(XMLGregorianCalendar value) {
         this.birthdate = value;
@@ -234,11 +220,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Gets the value of the vinculationDate property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public XMLGregorianCalendar getVinculationDate() {
         return vinculationDate;
@@ -246,11 +232,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Sets the value of the vinculationDate property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public void setVinculationDate(XMLGregorianCalendar value) {
         this.vinculationDate = value;
@@ -258,11 +244,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Gets the value of the title property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getTitle() {
         return title;
@@ -270,11 +256,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Sets the value of the title property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setTitle(String value) {
         this.title = value;
@@ -282,11 +268,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Gets the value of the salary property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link BigInteger }
-     *     
+     *
      */
     public BigInteger getSalary() {
         return salary;
@@ -294,11 +280,11 @@ public class EmployeeInformationRequest {
 
     /**
      * Sets the value of the salary property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
-     *     
+     *
      */
     public void setSalary(BigInteger value) {
         this.salary = value;
